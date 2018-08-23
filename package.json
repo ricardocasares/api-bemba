@@ -1,0 +1,23 @@
+{
+  "name": "radio-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ricardo Casares <ricardocasares@gmail.com> (http://analogic.al/)",
+  "license": "MIT",
+  "now": {
+    "type": "docker",
+    "name": "bemba-api",
+    "alias": [
+      "api-bemba.analogic.al"
+    ],
+    "features": {
+      "cloud": "v2"
+    }
+  },
+  "scripts": {
+    "start": "json-server db.json -q --read-only"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0"
+  }
+}
